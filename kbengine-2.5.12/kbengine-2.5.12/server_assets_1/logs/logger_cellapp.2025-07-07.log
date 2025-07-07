@@ -1,0 +1,58 @@
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 404] - -----------------------------------------------------------------------------------------
+
+
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 405] - Resmgr::initialize: KBE_ROOT=E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 406] - Resmgr::initialize: KBE_RES_PATH=E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/kbe/res/;E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/server_assets_1/;E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/server_assets_1/scripts/;E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/server_assets_1/res/
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 406] - Resmgr::initialize: KBE_BIN_PATH=E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/kbe/bin/server/
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 443] - NetworkInterface::initialize(INTERNAL-TCP): bound to all interfaces with default route interface on 192.168.1.5 ( 192.168.1.5:52409 )
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 446] - NetworkInterface::initialize(INTERNAL-TCP): address 192.168.1.5:52409, SOMAXCONN=511.
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 446] - server-configs:
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 446] - 	gameUpdateHertz : 10
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 446] - 	defaultViewRadius : 80
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 447] - 	defaultViewHysteresisArea : 5
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 447] - 	entryScriptFile : kbemain
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 447] - 	internalTcpAddr : 192.168.1.5:52409
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:05 447] - 	componentID : 8001
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 008] - Components::findLogger: found logger, addr:192.168.1.5:52406
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 008] - Components::addComponent: reset orderLog, uid=59798!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 009] - Components::addComponent[logger], uid=59798, componentID=2000, globalorderid=1, grouporderid=1, totalcount=1
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 016] - ---- cellapp Version: 2.5.10. ScriptVersion: 0.1.0. Pythoncore: 3.7.3. Protocol: 4478E9BD24C10143131E32BB1D739ABD. Config: Debug X64. Built: 09:29:06 Jun  8 2025. AppID: 8001. UID: 59798. PID: 12000 ----
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 016] - Server Administrator:         Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz with 33535220kB RAM
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 017] - ThreadPool::createThreadPool: creating  threadpool...
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 018] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 329] - Script::install(): is successfully, Python=(3.7.3 (default, Jun  8 2025, 09:25:47) [MSC v.1929 64 bit (AMD64)])!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 329] - Script::install(): KBExtra is successfully!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 441] - TelnetServer server is running on port 50000
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:06 958] - ---- cellapp is running ----
+   DEBUG    cellapp-1 59798 8001  [2025-07-07 12:59:06 959] - Components::process(): Request for the process of identity...
+ WARNING    cellapp-1 59798 8001  [2025-07-07 12:59:13 118] - EntityApp::checkTickPeriod: tick took 6159% (6.16 seconds)!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:14 210] - Components::findComponents: find dbmgr(1)...
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:14 237] - Components::findComponents: found dbmgr, addr:192.168.1.5:52410
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:14 237] - Components::addComponent: reset orderLog, uid=59798!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:14 238] - Components::addComponent[dbmgr], uid=59798, componentID=4000, globalorderid=1, grouporderid=1, totalcount=1
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:14 238] - Components::findComponents: found dbmgr, addr:192.168.1.5:52410
+ WARNING    cellapp-1 59798 8001  [2025-07-07 12:59:15 238] - EntityApp::checkTickPeriod: tick took 1078% (1.08 seconds)!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:16 259] - Components::findComponents: find cellappmgr(1)...
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:16 357] - Components::findComponents: found cellappmgr, addr:192.168.1.5:52408
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:16 357] - Components::addComponent[cellappmgr], uid=59798, componentID=6000, globalorderid=2, grouporderid=1, totalcount=1
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:16 362] - Components::findComponents: found cellappmgr, addr:192.168.1.5:52408
+ WARNING    cellapp-1 59798 8001  [2025-07-07 12:59:17 362] - EntityApp::checkTickPeriod: tick took 1202% (1.20 seconds)!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:18 409] - Components::findComponents: find baseappmgr(1)...
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:18 471] - Components::findComponents: found baseappmgr, addr:192.168.1.5:52407
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:18 472] - Components::addComponent[baseappmgr], uid=59798, componentID=5000, globalorderid=3, grouporderid=1, totalcount=1
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:18 475] - Components::findComponents: found baseappmgr, addr:192.168.1.5:52407
+ WARNING    cellapp-1 59798 8001  [2025-07-07 12:59:19 475] - EntityApp::checkTickPeriod: tick took 1114% (1.11 seconds)!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:20 559] - Components::findComponents: register self to dbmgr...
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:20 564] - Components::findComponents: register self to cellappmgr...
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:20 565] - ServerApp::onRegisterNewApp: uid:59798, username:Administrator, componentType:baseapp, componentID:7001, globalorderID=-1, grouporderID=-1, intaddr:192.168.1.5, intport:52412, extaddr:192.168.1.5, extport:20015,  from 192.168.1.5:52439/0/0/0.
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:20 565] - Components::addComponent[baseapp], uid=59798, componentID=7001, globalorderid=4, grouporderid=1, totalcount=1
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:20 565] - ServerApp::onRegisterNewApp: uid:59798, username:Administrator, componentType:baseapp, componentID:7001, globalorderID=-1, grouporderID=-1, intaddr:192.168.1.5, intport:52412, extaddr:192.168.1.5, extport:20015,  from 192.168.1.5:52439/0/0/0.
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:20 565] - Components::findComponents: register self to baseappmgr...
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:20 609] - Components::process(): Found all the components!
+    INFO    cellapp-1 59798 8001  [2025-07-07 12:59:23 580] - EntityApp::onDbmgrInitCompleted: entityID alloc(2001-4001), startGlobalOrder=5, startGroupOrder=1, digest=363BB7D9C7C9010E5779213C13D38542.
+    INFO    cellapp01 59798 8001  [2025-07-07 12:59:23 580] - IDClient::onAddRange: number of ids increased from 2001 to 4001.
+ WARNING    cellapp01 59798 8001  [2025-07-07 12:59:23 891] - BundleBroadcast::BundleBroadcast: Cannot bind to port 20598, errorno=10048
+ WARNING    cellapp01 59798 8001  [2025-07-07 12:59:25 103] - E:\Server\kbengine-2.5.12\kbengine-2.5.12\kbe\src\lib\network\channel.cpp:1023: Profile processRecvMessages took 1.52 seconds
+ WARNING    cellapp01 59798 8001  [2025-07-07 12:59:25 103] - EntityApp::checkTickPeriod: tick took 1544% (1.54 seconds)!
+   S_DBG    cellapp01 59798 8001  [2025-07-07 12:59:25 109] - onInit::isReload:0
+   DEBUG    cellapp01 59798 8001  [2025-07-07 12:59:25 159] - InitProgressHandler::~InitProgressHandler()

@@ -1,0 +1,43 @@
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 385] - -----------------------------------------------------------------------------------------
+
+
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 387] - Resmgr::initialize: KBE_ROOT=E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 387] - Resmgr::initialize: KBE_RES_PATH=E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/kbe/res/;E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/server_assets_1/;E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/server_assets_1/scripts/;E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/server_assets_1/res/
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 388] - Resmgr::initialize: KBE_BIN_PATH=E:/_chuangye/learn_server/kbengine-2.5.12/kbengine-2.5.12/kbe/bin/server/
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 421] - NetworkInterface::initialize(EXTERNAL-TCP): bound to all interfaces with default route interface on 192.168.1.5 ( 192.168.1.5:20013 )
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 423] - NetworkInterface::initialize(EXTERNAL-TCP): address 192.168.1.5:20013, SOMAXCONN=511.
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 432] - NetworkInterface::initialize(INTERNAL-TCP): bound to all interfaces with default route interface on 192.168.1.5 ( 192.168.1.5:52411 )
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 434] - NetworkInterface::initialize(INTERNAL-TCP): address 192.168.1.5:52411, SOMAXCONN=511.
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 434] - server-configs:
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 434] - 	internalTcpAddr : 192.168.1.5:52411
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 434] - 	externalTcpAddr : 192.168.1.5:20013
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:05 435] - 	componentID : 9000
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 010] - Components::findLogger: found logger, addr:192.168.1.5:52406
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 010] - Components::addComponent: reset orderLog, uid=59798!
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 010] - Components::addComponent[logger], uid=59798, componentID=2000, globalorderid=1, grouporderid=1, totalcount=1
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 029] - ---- loginapp Version: 2.5.10. ScriptVersion: 0.1.0. Pythoncore: 3.7.3. Protocol: 1102EA4445FA7BC78DFA939A2161D781. Config: Debug X64. Built: 09:27:49 Jun  8 2025. AppID: 9000. UID: 59798. PID: 9684 ----
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 030] - Server Administrator:         Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz with 33535220kB RAM
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 031] - ThreadPool::createThreadPool: creating  threadpool...
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 031] - ThreadPool::createThreadPool: successfully(2), newThreadCount=1, normalMaxThreadCount=2, maxThreadCount=8
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 325] - Script::install(): is successfully, Python=(3.7.3 (default, Jun  8 2025, 09:25:47) [MSC v.1929 64 bit (AMD64)])!
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 326] - Script::install(): KBExtra is successfully!
+  S_INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 358] - onLoginAppReady: bootstrapGroupIndex=0, bootstrapGlobalIndex=0
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 359] - TelnetServer server is running on port 31000
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:06 790] - ---- loginapp is running ----
+   DEBUG   loginapp-1 59798 9000  [2025-07-07 12:59:06 791] - Components::process(): Request for the process of identity...
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:13 990] - Components::findComponents: find dbmgr(1)...
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:14 036] - Components::findComponents: found dbmgr, addr:192.168.1.5:52410
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:14 036] - Components::addComponent: reset orderLog, uid=59798!
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:14 036] - Components::addComponent[dbmgr], uid=59798, componentID=4000, globalorderid=1, grouporderid=1, totalcount=1
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:14 037] - Components::findComponents: found dbmgr, addr:192.168.1.5:52410
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:16 039] - Components::findComponents: find baseappmgr(1)...
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:16 053] - Components::findComponents: found baseappmgr, addr:192.168.1.5:52407
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:16 053] - Components::addComponent[baseappmgr], uid=59798, componentID=5000, globalorderid=2, grouporderid=1, totalcount=1
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:16 053] - Components::findComponents: found baseappmgr, addr:192.168.1.5:52407
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:18 079] - Components::findComponents: register self to dbmgr...
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:18 090] - Components::findComponents: register self to baseappmgr...
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:18 092] - Components::process(): Found all the components!
+    INFO   loginapp-1 59798 9000  [2025-07-07 12:59:23 580] - Loginapp::onDbmgrInitCompleted:startGlobalOrder=2, startGroupOrder=1, digest=363BB7D9C7C9010E5779213C13D38542.
+    INFO   loginapp01 59798 9000  [2025-07-07 12:59:24 783] - HTTPCBHandler::bind: 192.168.1.5:21103
+ WARNING   loginapp01 59798 9000  [2025-07-07 12:59:24 783] - E:\Server\kbengine-2.5.12\kbengine-2.5.12\kbe\src\lib\network\channel.cpp:1023: Profile processRecvMessages took 1.20 seconds
+    INFO   loginapp01 59798 9000  [2025-07-07 12:59:25 580] - Loginapp::onBaseappInitProgress: progress=1.
