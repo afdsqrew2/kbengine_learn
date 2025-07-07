@@ -1,0 +1,24 @@
+<root>
+        <Properties>
+        </Properties>
+
+        <ClientMethods>
+                <onEnter>
+                </onEnter>
+                <onSay>
+                        <Arg>UNICODE</Arg>
+                </onSay>
+        </ClientMethods>
+
+        <BaseMethods>
+        </BaseMethods>
+        
+        <CellMethods>
+                <say>
+                        <Exposed/>
+                        <Arg>UNICODE</Arg>
+                </say>
+        
+        </CellMethods>
+
+</root>
