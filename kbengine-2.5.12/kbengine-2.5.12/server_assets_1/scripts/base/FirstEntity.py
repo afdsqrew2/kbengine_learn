@@ -22,6 +22,10 @@ class FirstEntity(KBEngine.Proxy):
 		cell部分。
 		"""
 		INFO_MSG("account[%i] entities enable. entityCall:%s" % (self.id, self.client))
+		
+		DEBUG_MSG("-------对象放入空间------")
+		space = KBEngine.globalData["FirstSpace"]
+		self.createCellEntity(space.cell) 		
 
 	def onLogOnAttempt(self, ip, port, password):
 		"""
