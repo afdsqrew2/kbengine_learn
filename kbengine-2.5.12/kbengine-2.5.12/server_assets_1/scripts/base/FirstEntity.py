@@ -41,4 +41,11 @@ class FirstEntity(KBEngine.Proxy):
 		客户端对应实体已经销毁
 		"""
 		DEBUG_MSG("Account[%i].onClientDeath:" % self.id)
-		self.destroy()
+		#self.destroy()
+		
+		#销毁cell
+		self.destroyCellEntity()
+		
+	def onLoseCell(self):
+		DEBUG_MSG("Account[%i].onLoseCell:" % self.id)
+		self.destroy()		
