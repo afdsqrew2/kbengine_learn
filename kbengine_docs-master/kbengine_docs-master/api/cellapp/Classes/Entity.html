@@ -1,0 +1,2046 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Entity - KBEngine cell 文档</title>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td align=left style="background:#708090"> <font size=15 color=#ffffff> KBEngine </font></td></tr>
+</table> <hr>
+<h1>Entity类</h1>
+
+<p style="text-align: center;"><span class="module_h1">[<a href="../Modules/KBEngine.html" class="module_h1">KBEngine模块</a>]</span></p><p>Entity是<a href="../Modules/KBEngine.html">KBEngine</a>模块的一部分。 <a href="#detailed_description">更多...</a></p><p></p><pre>import KBEngine</pre>
+
+<h2><a href="#" onClick="obj=document.getElementById( 'functions' );vis = (obj.style.display == 'none') ? 'block' : 'none'; obj.style.display = vis; return false;" class="h2">成员函数</a></h2>
+<table id="functions" cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr><td>
+<span class="function_list">def <a href="#accelerate" class="function_list" >accelerate</a>( self, accelerateType, acceleration ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#addYawRotator" class="function_list" >addYawRotator</a>( self, targetYaw, velocity, userArg ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#addProximity" class="function_list" >addProximity</a>( self, range, userArg ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#addTimer" class="function_list" >addTimer</a>( self, start, interval=0.0, userData=0 ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#cancelController" class="function_list" >cancelController</a>( self, controllerID ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#clientEntity" class="function_list" >clientEntity</a>( self, destID  ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#canNavigate" class="function_list" >canNavigate</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#debugView" class="function_list" >debugView</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#delTimer" class="function_list" >delTimer</a>( self, id ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#destroy" class="function_list" >destroy</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#destroySpace" class="function_list" >destroySpace</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#entitiesInView" class="function_list" >entitiesInView</a>( self, pending):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#entitiesInRange" class="function_list" >entitiesInRange</a>( self, range, entityType=None, position=None ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#isReal" class="function_list" >isReal</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#moveToEntity" class="function_list" >moveToEntity</a>( self, destEntityID, velocity, distance, userData, faceMovement, moveVertically, offsetPos ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#moveToPoint" class="function_list" >moveToPoint</a>( self, destination, velocity, distance, userData, faceMovement, moveVertically ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#getViewRadius" class="function_list" >getViewRadius</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#getViewHystArea" class="function_list" >getViewHystArea</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#getRandomPoints" class="function_list" >getRandomPoints</a>( self, centerPos, maxRadius, maxPoints, layer ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#navigate" class="function_list" >navigate</a>( self, destination, velocity, distance, maxMoveDistance, maxSearchDistance, faceMovement, layer, userData ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#navigatePathPoints" class="function_list" >navigatePathPoints</a>( self,  destination, maxSearchDistance, layer ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#setViewRadius" class="function_list" >setViewRadius</a>( self, radius, hyst=5 ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#teleport" class="function_list" >teleport</a>( self, nearbyMBRef, position, direction ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#writeToDB" class="function_list" >writeToDB</a>( self, shouldAutoLoad, dbInterfaceName ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#getWitnesses" class="function_list" >getWitnesses</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+    <span class="function_list">def <a href="#getComponent" class="function_list" >getComponent</a>( self, componentName, all ):</span>
+</td></tr>
+
+<tr><td>
+    <span class="function_list">def <a href="#fireEvent" class="function_list" >fireEvent</a>( self, eventName, *args ):</span>
+</td></tr>
+
+<tr><td>
+    <span class="function_list">def <a href="#registerEvent" class="function_list" >registerEvent</a>( self, eventName, callback ):</span>
+</td></tr>
+
+<tr><td>
+    <span class="function_list">def <a href="#deregisterEvent" class="function_list" >deregisterEvent</a>( self, eventName, callback ):</span>
+</td></tr>
+
+</table>
+
+<h2><a href="#" onClick="obj=document.getElementById( 'callbacks' );vis = (obj.style.display == 'none') ? 'block' : 'none'; obj.style.display = vis; return false;" class="h2">回调函数</a></h2>
+<table id="callbacks" cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr><td>
+<span class="function_list">def <a href="#onDestroy" class="function_list" >onDestroy</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onEnterTrap" class="function_list" >onEnterTrap</a>( self, entity, rangeXZ, rangeY, controllerID, userArg ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onEnteredView" class="function_list" >onEnteredView</a>( self, entity ):</span>
+</td></tr>
+
+
+<tr><td>
+<span class="function_list">def <a href="#onGetWitness" class="function_list" >onGetWitness</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onLeaveTrap" class="function_list" >onLeaveTrap</a>( self, entity, rangeXZ, rangeY, controllerID, userArg ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onLoseControlledBy" class="function_list" >onLoseControlledBy</a>( self, id ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onLoseWitness" class="function_list" >onLoseWitness</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onMove" class="function_list" >onMove</a>( self, controllerID, userData ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onMoveOver" class="function_list" >onMoveOver</a>( self, controllerID, userData ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onMoveFailure" class="function_list" >onMoveFailure</a>( self, controllerID, userData ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onRestore" class="function_list" >onRestore</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onSpaceGone" class="function_list" >onSpaceGone</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onTurn" class="function_list" >onTurn</a>( self, controllerID, userData ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onTeleport" class="function_list" >onTeleport</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onTeleportFailure" class="function_list" >onTeleportFailure</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onTeleportSuccess" class="function_list" >onTeleportSuccess</a>( self, nearbyEntity ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onTimer" class="function_list" >onTimer</a>( self, timerHandle, userData ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onUpdateBegin" class="function_list" >onUpdateBegin</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onUpdateEnd" class="function_list" >onUpdateEnd</a>( self ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onWitnessed" class="function_list" >onWitnessed</a>( self, isWitnessed ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#onWriteToDB" class="function_list" >onWriteToDB</a>( self ):</span>
+</td></tr>
+
+</table>
+
+<h2><a href="#" onClick="obj=document.getElementById( 'attributes' );vis = (obj.style.display == 'none') ? 'block' : 'none'; obj.style.display = vis; return false;" class="h2">属性</a></h2>
+<table id="attributes" cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><a href="#allClients" class="attribute_list" >allClients</a></td><td>&nbsp; 只读 PyClient
+</td></tr>
+
+<tr valign=top><td><a href="#base" class="attribute_list" >base</a></td><td>&nbsp; 只读 <a href=../../keywords.html#EntityCall>BaseEntityCall </a>
+</td></tr>
+
+<tr valign=top><td><a href="#client" class="attribute_list" >client</a></td><td>&nbsp; 只读 <a href=../../keywords.html#EntityCall>ClientEntityCall</a>
+</td></tr>
+
+<tr valign=top><td><a href="#controlledBy" class="attribute_list" >controlledBy</a></td><td>&nbsp; <a href=../../keywords.html#EntityCall>BaseEntityCall</a>
+</td></tr>
+
+<tr valign=top><td><a href="#className" class="attribute_list" >className</a></td><td>&nbsp; 只读 <a href="STRING.html">string</a>
+</td></tr>
+
+<tr valign=top><td><a href="#direction" class="attribute_list" >direction</a></td><td>&nbsp; Tuple of 3 floats as (roll, pitch, yaw)
+</td></tr>
+
+<tr valign=top><td><a href="#hasWitness" class="attribute_list" >hasWitness</a></td><td>&nbsp; boolean
+</td></tr>
+
+<tr valign=top><td><a href="#id" class="attribute_list" >id</a></td><td>&nbsp; 只读 Integer
+</td></tr>
+
+<tr valign=top><td><a href="#isDestroyed" class="attribute_list" >isDestroyed</a></td><td>&nbsp; 只读 bool
+</td></tr>
+
+<tr valign=top><td><a href="#isWitnessed" class="attribute_list" >isWitnessed</a></td><td>&nbsp; 只读 bool</td></tr>
+
+<tr valign=top><td><a href="#layer" class="attribute_list" >layer</a></td><td>&nbsp; int8
+</td></tr>
+
+<tr valign=top><td><a href="#otherClients" class="attribute_list" >otherClients</a></td><td>&nbsp; 只读 PyClient
+</td></tr>
+
+<tr valign=top><td><a href="#position" class="attribute_list" >position</a></td><td>&nbsp; <a href=../../keywords.html#vector3>Vector3</a>
+</td></tr>
+
+<tr valign=top><td><a href="#spaceID" class="attribute_list" >spaceID</a></td><td>&nbsp; 只读 uint32
+</td></tr>
+
+<tr valign=top><td><a href="#topSpeed" class="attribute_list" >topSpeed</a></td><td>&nbsp; float
+</td></tr>
+
+<tr valign=top><td><a href="#topSpeedY" class="attribute_list" >topSpeedY</a></td><td>&nbsp; float
+</td></tr>
+
+<tr valign=top><td><a href="#volatileInfo" class="attribute_list" >volatileInfo</a></td><td>&nbsp; float
+</td></tr>
+
+</table>
+
+<hr>
+<a name="detailed_description"></a><h2>详细描述</h2>
+类<a href=../../keywords.html#entity>Entity</a>的实例代表着在cell上的游戏对象。一个
+<a href=../../keywords.html#entity>Entity</a>可以是"real"或者"ghosted"的，一个"ghost" <a href=../../keywords.html#entity>Entity</a>是一个存活在邻近的cell上
+的"real" <a href=../../keywords.html#entity>Entity</a>的拷贝。对于每一个实体来说有一个唯一的"real" <a href=../../keywords.html#entity>Entity</a>实例，和有0个
+或者更多的"ghost" <a href=../../keywords.html#entity>Entity</a>实例。
+<br><br>
+一个<a href=../../keywords.html#entity>Entity</a>实例操控着实体的位置数据，包括他的空间和旋转。它还控制着这些数据发给
+客户端的频率（如果可以）。位置的数据可以被唯一的客户端所更新，被控制器对象，被teleport成员函数修改。
+控制器是非python对象，可以适用在cell实体上随着时间的过去来改变它们的位置数据，它们通过成员函数如"trackEntity"和"turnToYaw"来
+添加到<a href=../../keywords.html#entity>Entity</a>，可以通过"cancelController"移除。
+<br><br>
+感兴趣的范围，或"View"对于所有属于客户端的<a href="KBEngine.html">KBEngine</a>实体来说是一个重要的概念。
+一个实体的View是围绕这个实体的客户端（如果它有）所能感知的区域。这用于选择发给客户端的数据量。View的实际
+形状由x轴和z轴上的距离范围定义，还有一个类似形状向外延伸的滞后区域。一个<a href=../../keywords.html#entity>Entity</a>进入
+另一个<a href=../../keywords.html#entity>Entity</a>的View，但不会离开它直到它离开滞后区域。一个<a href=../../keywords.html#entity>Entity</a>可以
+通过"setViewRadius"修改它的View大小。
+可以通过"entitiesInRange"找到一个具体距离之内的所有实体，通过"addProximity"设置一个陷阱捕获进入陷阱的所有实体。
+<br><br>
+cellApp上新的<a href=../../keywords.html#entity>Entity</a>可以使用<a href="KBEngine.html">KBEngine</a>.<a href=KBEngine.html#createEntity>createEntity</a>
+创建。一个实体还可以通过baseApp远程调用<a href="KBEngine.html">KBEngine</a>.<a href=KBEngine.html#createCellEntity>createCellEntity</a>函数
+来创建。
+<br><br>
+一个<a href=../../keywords.html#entity>Entity</a>可以通过<a href=../../keywords.html#EntityCall>ENTITYCALL</a>访问在base和client应用程序上的等价的实体。这需要
+一组远程调用的函数（在实体的.def文件里指定）。
+
+<hr>
+<h2>成员函数文档</h2>
+
+<a name="accelerate"></a><p class="function_definition">
+<span class="function_definition">def accelerate( <i>self, accelerateType, acceleration</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+加速实体当前运动。
+</div>
+
+<p>
+<span class="function_links"><b>可影响的运动包括：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#moveToEntity">moveToEntity</a><br></td></tr>
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#moveToPoint">moveToPoint</a><br></td></tr>
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#navigate">navigate</a><br></td></tr>
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#addYawRotator">addYawRotator</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>accelerateType</i></span></td><td><span class="function_parameter_description">
+string，影响的运动类型，如：Movement、Turn。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>velocity</i></span></td><td><span class="function_parameter_description">
+float，每秒的加速度，如果传入的是负值则表示减速度。<br>
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+影响后的实体当前速度。
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="addYawRotator"></a><p class="function_definition">
+<span class="function_definition">def addYawRotator( <i>self, targetYaw, velocity, userArg</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+控制实体绕yaw旋转，旋转完成将会通过<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#onTurn>onTurn</a>通知。
+<br><br>
+使用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>带上控制器ID或者使用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController("Movement")</a>来删除它。
+</div>
+
+<p>
+<span class="function_links"><b>参看：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#cancelController">cancelController</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>targetYaw</i></span></td><td><span class="function_parameter_description">
+float，给定的目标yaw弧度。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>velocity</i></span></td><td><span class="function_parameter_description">
+float，旋转时每秒的弧度。<br>
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userArg</i></span></td><td><span class="function_parameter_description">
+是一个可选的整型，所有控制器共有。如果这个值不为0则传给回调函数。建议
+在回调原型里设置默认值为0。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+
+<a name="addProximity"></a><p class="function_definition">
+<span class="function_definition">def addProximity( <i>self, rangeXZ, rangeY, userArg</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+创建一个范围触发器，当有其它实体进入或离开这个触发器区域的时候会通知这个<a href=../../keywords.html#entity>Entity</a>。这个区域是一个方形（为了效率）。如果<br>
+其它实体在x轴和z轴上均在给定的距离里面，则实体被视为在这个范围里面。这个<a href=../../keywords.html#entity>Entity</a>通过onEnterTrap和onLeaveTrap函数被<br>
+通知，这两个函数可以如下定义：
+<br><br>
+
+<pre>	def onEnterTrap( self, entityEntering, rangeXZ, rangeY, controllerID, userArg = 0 ):
+	def onLeaveTrap( self, entityLeaving, rangeXZ, rangeY, controllerID, userArg = 0 ):
+</pre>
+<br><br>
+由于这个范围触发器是一个控制器，使用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>带上控制器ID来删除它。
+<br><br>
+需要注意的是回调有可能会立刻被触发，即使在addProximity()调用返回之前。
+</div>
+
+<p>
+<span class="function_links"><b>参看：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#cancelController">cancelController</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>rangeXZ</i></span></td><td><span class="function_parameter_description">
+float，给定触发器xz轴区域的大小，必须大于等于0。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>rangeY</i></span></td><td><span class="function_parameter_description">
+float，给定触发器y轴高度，必须大于等于0。<br>
+需要注意的是，这个参数要生效必须开放<a href=../../keywords.html#kbengine_defaults.xml>kbengine_defaults.xml</a>->cellapp->coordinate_system->rangemgr_y
+<br>
+开放y轴管理会带来一些消耗，因为一些游戏大量的实体都在同一y轴高度或者在差不多水平线高度，此时碰撞变得非常密集。<br>
+3D太空类游戏或者小房间类实体较少的游戏比较适合开放此选项。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userArg</i></span></td><td><span class="function_parameter_description">
+是一个可选的整型，所有控制器共有。如果这个值不为0则传给回调函数。建议
+在回调原型里设置默认值为0。
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+返回创建控制器的id。
+</td></tr>
+</table>
+</p>
+
+<a name="addTimer"></a><p class="function_definition">
+<span class="function_definition">def addTimer( <i>self, start, interval=0.0, userData=0</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+注册一个定时器，定时器由回调函数<i><a href="#onTimer">onTimer</a></i>触发，回调函数将在"initialOffset"秒后被执行第1次，而后将每间隔"repeatOffset"秒执行1次，可设定一个用户参数"userArg"（仅限integer类型）。
+<br><br>
+<i><a href="#onTimer">onTimer</a></i> 函数必须在entity的cell部分被定义，且带有2个参数，第1个integer类型的是timer的id（可用于移除timer的"<a href="#delTimer">delTimer</a>"函数），第2个是用户参数"userArg"。
+<br><br>
+例子:
+
+<pre><pre># 这里是使用addTimer的一个例子
+import <a href="../Modules/KBEngine.html">KBEngine</a>
+&nbsp;
+class MyCellEntity( <a href="../Modules/KBEngine.html">KBEngine</a>.<a href=../../keywords.html#entity>Entity</a> ):
+&nbsp;
+    def __init__( self ):
+        <a href="../Modules/KBEngine.html">KBEngine</a>.<a href=../../keywords.html#entity>Entity</a>.__init__( self )
+&nbsp;
+        # 增加一个定时器，5秒后执行第1次，而后每1秒执行1次，用户参数是9
+        self.addTimer( 5, 1, 9 )
+&nbsp;
+        # 增加一个定时器，1秒后执行，用户参数缺省是0
+        self.addTimer( 1 )
+&nbsp;
+    # <a href=../../keywords.html#entity>Entity</a>的定时器回调"onTimer"被调用
+    def onTimer( self, id, userArg ):
+        print "MyCellEntity.onTimer called: id %i, userArg: %i" % ( id, userArg )
+        # if 这是不断重复的定时器，当不再需要该定时器的时候，调用下面函数移除:
+        #     self.delTimer( id )</pre>
+</pre>
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>initialOffset</i></span></td><td><span class="function_parameter_description">
+float，指定定时器从注册到第一次回调的时间间隔（秒）。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>repeatOffset</i></span></td><td><span class="function_parameter_description">
+float，指定第一次回调执行后每次执行的时间间隔（秒）。必须用函数<a href="#delTimer">delTimer</a>移除定时器，否则它会一直重复下去。值小于等于0将被忽略。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userArg</i></span></td><td><span class="function_parameter_description">
+integer，指定底层回调"<a href="#onTimer">onTimer</a>"时的userArg参数值。
+</span></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_return">返回:</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>integer，该函数返回timer的内部id，这个id可用于<a href="#delTimer">delTimer</a>移除定时器。
+</td></tr>
+</table>
+</p>
+
+
+
+
+<a name="cancelController"></a><p class="function_definition">
+<span class="function_definition">def cancelController( <i>self, controllerID</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+函数cancelController停止一个控制器对<a href=../../keywords.html#entity>Entity</a>的影响。它只能在一个<a href=../../keywords.html#real>real</a>实体上被调用。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>controllerID</i></span></td><td><span class="function_parameter_description">
+controllerID是要取消的控制器的索引，它是一个整型。一个专用的控制器类型的字符串也可以作为它的类型。
+例如，一次只有一个移动/导航控制器可以被激活，这可以用entity.cancelController( "Movement" )取消。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="clientEntity"></a><p class="function_definition">
+<span class="function_definition">def clientEntity( <i>self, destID</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+通过这个方法可以访问自己客户端（当前实体必须绑定了客户端）中某个实体的方法，只有在View范围内的实体才会同步到客户端。它只能在一个<a href=../../keywords.html#real>real</a>实体上被调用。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>destID</i></span></td><td><span class="function_parameter_description">
+目标实体的ID。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="canNavigate"></a><p class="function_definition">
+<span class="function_definition">def canNavigate( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+通过这个方法判断当前实体是否可以使用导航（<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#navigate>navigate</a>）功能。它只能在一个<a href=../../keywords.html#real>real</a>实体上被调用。<br>
+通常当实体所在Space使用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#addSpaceGeometryMapping>addSpaceGeometryMapping</a>加载过有效的导航用的碰撞数据（Navmesh或者2D的tile数据）并且实体在有效导航区域该功能可用。
+</div>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>bool， 如果实体可在当前Space中使用导航功能返回True，否则返回False。
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="debugView"></a><p class="function_definition">
+<span class="function_definition">def debugView( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+debugView输出<a href=../../keywords.html#entity>Entity</a>的View的详细信息到cell的调试日志。
+一份View系统工作的描述可以在<a href=../../keywords.html#entity>Entity</a>类文档中找到。
+<br><br>
+一份样品信息如下：
+
+<pre>  INFO cellapp [0x00001a1c] [2014-11-04 00:28:41,409] - Avatar::debugView: 100 size=4, Seen=4, Pending=0, ViewRadius=50.000, ViewHyst=5.000
+  INFO cellapp [0x00001a1c] [2014-11-04 00:28:41,409] - Avatar::debugView: 100 Avatar(102), position(771.586.211.002.776.55), dist=0
+  INFO cellapp [0x00001a1c] [2014-11-04 00:28:41,409] - Avatar::debugView: 100 Monster(1028), position(820.834.211.635.768.749), dist=49.8659
+  INFO cellapp [0x00001a1c] [2014-11-04 00:28:41,409] - Avatar::debugView: 100 NPC(1025), position(784.024.210.95.782.273), dist=13.6915
+  INFO cellapp [0x00001a1c] [2014-11-04 00:28:41,409] - Avatar::debugView: 100 Avatar(106), position(771.586.211.002.776.55), dist=0
+</pre>
+信息的第一行告诉我们：
+<ul>
+<li>实体#1000的数据</li>
+<li>有4个实体在它的View区域并且已经同步给客户端。</li>
+<li>有0个实体在它的View区域，正在等待同步到客户端。</li>
+<li>View的半径是 50.000</li>
+<li>View的滞后区域向外延伸了5.000</li>
+</ul>
+</div>
+
+<a name="delTimer"></a><p class="function_definition">
+<span class="function_definition">def delTimer( <i>self, id</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+函数delTimer用于移除一个注册的定时器，移除后的定时器不再执行。只执行1次的定时器在执行回调后自动移除，不必要使用delTimer移除。
+如果delTimer函数使用一个无效的id（例如已经移除），将会产生错误。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>id</i></span></td><td><span class="function_parameter_description">
+integer，它指定要移除的定时器id。如果参数为字符串"All"，则一次性移除所有的定时器。
+</span></td></tr>
+
+</table>
+</p>
+
+<a name="destroy"></a><p class="function_definition">
+<span class="function_definition">def destroy( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数销毁它的本地<a href=../../keywords.html#entity>Entity</a>实例，如果实体在其他进程上存在<a href=../../keywords.html#ghost>ghost</a>部分也会同时通知销毁。
+这个函数最好由实体自己调用，如果这个实体是一个<a href=../../keywords.html#ghost>ghost</a>则会抛出一个异常。如果回调函数onDestroy()被实现则被调用。
+</div>
+
+<a name="destroySpace"></a><p class="function_definition">
+<span class="function_definition">def destroySpace( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+销毁这个实体所在的<a href=../../keywords.html#cn_Space>空间</a>。
+</div>
+
+<a name="entitiesInView"></a><p class="function_definition">
+<span class="function_definition">def entitiesInView( <i>self, pending</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+获得这个实体的<a href=../../keywords.html#View>View</a>范围内的实体列表。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr valign=top><td><span class="function_parameter_name"><i>pending</i></span></td><td><span class="function_parameter_description">
+bool，可选参数，默认值为False，只返回客户端可见的所有实体，否则返回服务端可见但未同步到客户端的所有实体。
+</span></td></tr>
+</table>
+</p>
+
+<a name="entitiesInRange"></a><p class="function_definition">
+<span class="function_definition">def entitiesInRange( <i>self, range, entityType=None, position=None</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+在给定的距离内搜索<a href="Entity.html">实体</a>。这是一个球形的搜索，3个轴的距离
+都要测量。这可以找到在这个<a href="Entity.html">实体</a>的<a href=../../keywords.html#View>View</a>范围之外的实体，但不能找到其他<a href=../../keywords.html#cell>cell</a>的实体。<br><br>
+例子：
+
+<pre>  self.entitiesInRange( 100, 'Creature', (100, 0, 100) )
+</pre>
+搜索到‘Creature’类型的实体列表（‘Creature’的子类实例化的实体）。中心点是(100, 0, 100)，搜索半径是100米。
+
+<pre>  [ e for e in self.entitiesInRange( 100, None, (100,0,100) ) if isinstance( e, BaseType ) ]
+</pre>
+将给出一个来自‘BaseType’或‘BaseType’的子类实例化的实体列表。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>range</i></span></td><td><span class="function_parameter_description">
+围绕这个实体搜索的距离，float类型
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>entityType</i></span></td><td><span class="function_parameter_description">
+一个可选的字符串参数，实体的类型名称，用于匹配实体。如果实体类型是一个有效的类名（ 有效的实体类型在<res><a href=../../keywords.html#entities.xml>/scripts/entities.xml</a>列出 ），<br>
+则只有这个类型的实体会被返回，否则将这个范围的所有实体都返回。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>position</i></span></td><td><span class="function_parameter_description">
+一个可选的<a href=../../keywords.html#vector3>Vector3</a>类型参数，作为搜索半径的中心, 默认以实体自身为中心。
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+在给定范围内的<a href=../../keywords.html#entity>Entity</a>对象列表。
+</td></tr>
+</table>
+</p>
+
+<a name="isReal"></a><p class="function_definition">
+<span class="function_definition">def isReal( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数返回这个<a href=../../keywords.html#entity>Entity</a>是<a href=../../keywords.html#real>real</a>的还是一个<a href=../../keywords.html#ghost>ghost</a>的。
+<br><br>
+这个函数很少被用到但对调试很有用。
+</div>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>bool， 如果是real实体返回True，否则返回False。
+</td></tr>
+</table>
+</p>
+
+<a name="moveToEntity"></a><p class="function_definition">
+<span class="function_definition">def moveToEntity( <i>self, destEntityID, velocity, distance, userData, faceMovement, moveVertically, offsetPos</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+直线移动<a href="Entity.html">实体</a>到另一个<a href=../../keywords.html#entity>Entity</a>位置。<br>
+任何<a href="Entity.html">实体</a>，在任意时刻只能有一个移动控制器，重复调用任何移动函数将终止之前的移动控制器。<br>
+调用后函数将返回一个可以用于取消这次移动的控制器ID。<br>
+<br>
+例如，<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>( movementID )。
+移动取消还可以调用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>( "Movement" )。当移动被取消之后回调通知方法将不被调用。
+<br><br>
+
+<pre>	def onMove( self, controllerID, userData ):
+	def onMoveOver( self, controllerID, userData ):
+	def onMoveFailure( self, controllerID, userData ):
+</pre>
+</div>
+
+<p>
+<span class="function_links"><b>参考:</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#cancelController">cancelController</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>destEntityID</i></span></td><td><span class="function_parameter_description">
+int，目标<a href=../../keywords.html#entity>Entity</a>的ID
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>velocity</i></span></td><td><span class="function_parameter_description">
+float，<a href=../../keywords.html#entity>Entity</a>移动的速度，单位m/s
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>distance</i></span></td><td><span class="function_parameter_description">
+float，距离目标小于该值停止移动，如果该值为0则移动到目标位置。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">
+object，可选参数，回调通知被调用时其中userData参数将为此值。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>faceMovement</i></span></td><td><span class="function_parameter_description">
+bool，可选参数，如果实体面向移动方向则为true。如果是其它机制则为false。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>moveVertically</i></span></td><td><span class="function_parameter_description">
+bool，可选参数，设为True指移动为直线移动，设为False指贴着地面直线移动。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>offsetPos</i></span></td><td><span class="function_parameter_description">
+Vector3，可选参数，设置一定的偏移值，例如使移动目标位置位于实体的左侧。
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+int，新创建的控制器ID。
+</td></tr>
+</table>
+</p>
+
+<a name="moveToPoint"></a><p class="function_definition">
+<span class="function_definition">def moveToPoint( <i>self, destination, velocity, distance, userData, faceMovement, moveVertically</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+直线移动<a href=../../keywords.html#entity>Entity</a>到给定的坐标点，成功或失败会调用回调函数。<br>
+任何<a href="Entity.html">实体</a>，在任意时刻只能有一个移动控制器，重复调用任何移动函数将终止之前的移动控制器。<br>
+返回一个可以用于取消这次移动的控制器ID。
+
+<br><br>例如：
+<br><a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>( movementID )。
+移动取消还可以调用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>( "Movement" )。当移动被取消之后通知方法将
+不被调用。
+<br><br>
+回调函数如下定义：
+
+<pre>	def onMove( self, controllerID, userData ):
+	def onMoveOver( self, controllerID, userData ):
+	def onMoveFailure( self, controllerID, userData ):
+</pre>
+</div>
+
+<p>
+<span class="function_links"><b>参看：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#cancelController">cancelController</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>destination</i></span></td><td><span class="function_parameter_description">
+Vector3，<a href=../../keywords.html#entity>Entity</a>要移动到的目标位置点</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>velocity</i></span></td><td><span class="function_parameter_description">
+float，<a href=../../keywords.html#entity>Entity</a>的移动速度，单位m/s</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>distance</i></span></td><td><span class="function_parameter_description">
+float，距离目标小于该值停止移动，如果该值为0则移动到目标位置。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">
+object，传给通知函数的数据
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>faceMovement</i></span></td><td><span class="function_parameter_description">
+bool，如果实体面向移动方向则为true。如果是其它机制则为false。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>moveVertically</i></span></td><td><span class="function_parameter_description">
+bool，设为true指移动为直线移动，设为false指贴着地面移动。
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+int，新创建的控制器ID。
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="getViewRadius"></a><p class="function_definition">
+<span class="function_definition">def getViewRadius( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数返回这个<a href=../../keywords.html#entity>Entity</a>当前的View半径值。
+<br><br>
+数据可以通过
+<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#setViewRadius>setViewRadius</a>( radius, hyst )设置。
+</div>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>float， View半径。
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="getViewHystArea"></a><p class="function_definition">
+<span class="function_definition">def getViewHystArea( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数返回这个<a href=../../keywords.html#entity>Entity</a>的View当前滞后区域值。
+<br><br>
+数据可以通过
+<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#setViewRadius>setViewRadius</a>( radius, hyst )设置。
+</div>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>float， View当前滞后区域值。
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="getRandomPoints"></a><p class="function_definition">
+<span class="function_definition">def getRandomPoints( <i>self, centerPos, maxRadius, maxPoints, layer</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数用于获取以某个坐标点为中心一定区域内<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#navigate>navigate</a>可到达的随机坐标点。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>centerPos</i></span></td><td><span class="function_parameter_description">
+Vector3，<a href=../../keywords.html#entity>Entity</a>中心坐标点
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>maxRadius</i></span></td><td><span class="function_parameter_description">
+float，最大的搜索半径
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>maxPoints</i></span></td><td><span class="function_parameter_description">
+uint32，最多返回的随机坐标点数量。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>layer</i></span></td><td><span class="function_parameter_description">
+int8，使用某个层的navmesh来搜索。
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+tuple，包含一个或者多个坐标的数组。 
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="navigate"></a><p class="function_definition">
+<span class="function_definition">def navigate( <i>self, destination, velocity, distance, maxMoveDistance, maxSearchDistance, faceMovement, layer, userData</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+使用导航系统来使这个<a href=../../keywords.html#entity>Entity</a>向一个目标点移动，成功或失败会调用回调函数。<br>
+<a href="KBEngine.html">KBEngine</a>可以有数个预先生成好的导航网格，不同的网格大小（会导致不同的导航路径）。<br>
+任何<a href="Entity.html">实体</a>，在任意时刻只能有一个移动控制器，重复调用任何移动函数将终止之前的移动控制器。<br>
+返回一个可以用于取消这次移动的控制器ID。
+
+<br><br>例如：
+<br><a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>( movementID )。
+移动取消还可以调用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#cancelController>cancelController</a>( "Movement" )。当移动被取消之后通知方法将
+不被调用。
+<br><br>
+回调函数如下定义：
+
+<pre>	def onMove( self, controllerID, userData ):
+	def onMoveOver( self, controllerID, userData ):
+	def onMoveFailure( self, controllerID, userData ):
+</pre>
+</div>
+
+<p>
+<span class="function_links"><b>参看：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#cancelController">cancelController</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>destination</i></span></td><td><span class="function_parameter_description">
+Vector3，<a href=../../keywords.html#entity>Entity</a>移向的目标点。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>velocity</i></span></td><td><span class="function_parameter_description">
+float，<a href=../../keywords.html#entity>Entity</a>的移动速度，单位m/s
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>distance</i></span></td><td><span class="function_parameter_description">
+float，距离目标小于该值停止移动，如果该值为0则移动到目标位置。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>maxMoveDistance</i></span></td><td><span class="function_parameter_description">
+float，最大的移动距离。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>maxSearchDistance</i></span></td><td><span class="function_parameter_description">
+float，从导航数据中最大搜索距离。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>faceMovement</i></span></td><td><span class="function_parameter_description">
+bool，如果实体面向移动方向则为true（默认）。如果是其它机制则为false。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>layer</i></span></td><td><span class="function_parameter_description">
+int8，使用某个层的navmesh来寻路。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">
+object，传给通知函数的数据。
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+int，新创建的控制器ID。 
+</td></tr>
+</table>
+</p>
+
+
+
+
+<a name="navigatePathPoints"></a><p class="function_definition">
+<span class="function_definition">def navigatePathPoints( <i>self, destination, maxSearchDistance, layer</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数返回有当前<a href=../../keywords.html#entity>Entity</a>的位置到destination位置所经过的路径点列表。
+<br><br>
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>destination</i></span></td><td><span class="function_parameter_description">
+Vector3，<a href=../../keywords.html#entity>Entity</a>移向的目标点
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>maxSearchDistance</i></span></td><td><span class="function_parameter_description">
+float，最大的搜索距离
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>layer</i></span></td><td><span class="function_parameter_description">
+int8，使用某个层的navmesh来查找路径列表。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="setViewRadius"></a><p class="function_definition">
+<span class="function_definition">def setViewRadius( <i>self, radius, hyst=5</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+指定<a href=../../keywords.html#entity>Entity</a>的<a href=../../keywords.html#View>感兴趣的区域</a>大小。
+<br><br>
+这个函数只能用于有<a href=../../keywords.html#Witness>Witness</a>关联的实体。
+<br><br>
+注意：
+你可以通过设置<a href=../../keywords.html#kbengine.xml>kbengine.xml</a>配置选项'cellapp/defaultViewRadius'来设置默认的View半径。
+<br><br>
+View半径默认是不能大于500.0的。详情请看<a href=../../keywords.html#kbengine_defaults.xml>kbengine_defaults.xml</a>配置选项'cellapp/entity_posdir_updates'。
+<br><br>
+数据可以通过
+<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#getViewRadius>getViewRadius</a>( )与<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#getViewHystArea>getViewHystArea</a>( )获得。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>radius</i></span></td><td><span class="function_parameter_description">
+float，radius指定View区域的半径
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>hyst</i></span></td><td><span class="function_parameter_description">
+float，指定超过View区域的滞后区域的大小。合理的设定滞后区域将能够降低View碰撞的敏感度从而提高CPU执行效率。<br>
+一个实体进入另一个实体的View必须跨越View半径区域，但实体离开View区域则需要移出View半径区域包括滞后区域。
+</span></td></tr>
+
+</table>
+</p>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+None
+</td></tr>
+</table>
+</p>
+
+<a name="teleport"></a><p class="function_definition">
+<span class="function_definition">def teleport( <i>self, nearbyMBRef, position, direction</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+瞬间移动一个<a href=../../keywords.html#entity>Entity</a>到一个指定的空间。这个函数允许指定实体移动后的位置与朝向。<br>
+如果需要在不同<a href=../../keywords.html#cn_Space>空间</a>跳转（ 通常用于不同场景或者房间跳转 ），可以传一个<a href=../../keywords.html#EntityCall>CellEntityCall</a>给这个函数（ 这个entityCall所对应的实体必须在目的<a href=../../keywords.html#cn_Space>空间</a>中 ）。
+<br><br>
+这个函数只能在<a href=../../keywords.html#real>real</a>的实体上被调用。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>nearbyMBRef</i></span></td><td><span class="function_parameter_description">
+一个决定<a href=../../keywords.html#entity>Entity</a>跳往哪个<a href=../../keywords.html#cSpace>Space</a>的<a href=../../keywords.html#EntityCall>CellEntityCall</a>（ 这个entityCall所对应的实体必须在目的<a href=../../keywords.html#cSpace>Space</a>中 ），它被认为是传送目的地。
+这个可以设为None，在这种情形下它会在当前的cell完成瞬移。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>position</i></span></td><td><span class="function_parameter_description">
+<a href=../../keywords.html#entity>Entity</a>瞬移后的坐标，是一个有3个float(x, y, z)组成的序列。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>direction</i></span></td><td><span class="function_parameter_description">
+<a href=../../keywords.html#entity>Entity</a>瞬移后的朝向，是一个由3个float组成的序列(roll,pitch, yaw)。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+
+<a name="writeToDB"></a><p class="function_definition">
+<span class="function_definition">def writeToDB( <i>self, shouldAutoLoad, dbInterfaceName</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数保存与这个实体相关的数据到数据库，包括base实体的数据。在数据确认传到数据库之前base实体的onWriteToDB函数会被调用。
+<br><br>
+cell实体的数据同时备份在base实体，确保遇到灾难恢复数据时数据是最新的。
+<br><br>
+这个函数只能在<a href=../../keywords.html#real>real</a>实体且实体必须存在base部分时才允许被调用。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>shouldAutoLoad</i></span></td><td><span class="function_parameter_description">
+这个可选参数指定这个实体在服务启动的时候是否需要从数据库加载。<br>
+注意：服务器启动时自动加载实体，底层默认将会调用createEntityAnywhereFromDBID将实体创建到一个负载最小的baseapp上，整个过程将会在第一个启动的baseapp调用onBaseAppReady之前完成。<br>
+<br>脚本层可以在个性化脚本(kbengine_defaults.xml->baseapp->entryScriptFile定义)中重新实现实体的创建方法，例如：<br>
+def onAutoLoadEntityCreate(entityType, dbid): <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KBEngine.createEntityFromDBID(entityType, dbid)<br>
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>dbInterfaceName</i></span></td><td><span class="function_parameter_description">
+string，可选参数，指定由某个数据库接口来完成, 默认使用"default"接口。数据库接口由kbengine_defaults.xml->dbmgr->databaseInterfaces中定义。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="getWitnesses"></a><p class="function_definition">
+<span class="function_definition">def getWitnesses( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数返回观察该<a href=../../keywords.html#entity>Entity</a>的所有观察者(玩家)。<br>
+<br>
+</div>
+
+<p>
+<span class="function_return">返回：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>tuple， 包含零个或者多个<a href=../../keywords.html#entity>Entity</a>的数组。
+</td></tr>
+</table>
+</p>
+
+
+<a name="getComponent"></a><p class="function_definition">
+<span class="function_definition">def getComponent( <i>self, componentName, all</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+该函数用于获取实体所绑定的某一类组件实例。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>componentName</i></span></td><td><span class="function_parameter_description">
+string，组件类型名称，组件的模块名称。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>all</i></span></td><td><span class="function_parameter_description">
+bool，如果为True，返回所有同类组件实例，否则只返回第一个或空列表。
+</span></td></tr>
+</table>
+</p>
+
+
+<a name="fireEvent"></a><p class="function_definition">
+<span class="function_definition">def fireEvent( <i>self, eventName, *args</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+该函数用于触发实体事件。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>eventName</i></span></td><td><span class="function_parameter_description">
+string，要触发的事件名称。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>args</i></span></td><td><span class="function_parameter_description">
+要附带的事件数据，可变参数。
+</span></td></tr>
+</table>
+</p>
+
+
+<a name="registerEvent"></a><p class="function_definition">
+<span class="function_definition">def registerEvent( <i>self, eventName, callback</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+该函数用于注册实体事件。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>eventName</i></span></td><td><span class="function_parameter_description">
+string，要注册监听的事件名称。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>callback</i></span></td><td><span class="function_parameter_description">
+当事件触发时，用于响应该事件的回调方法。
+</span></td></tr>
+</table>
+</p>
+
+
+<a name="deregisterEvent"></a><p class="function_definition">
+<span class="function_definition">def deregisterEvent( <i>self, eventName, callback</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+该函数用于注销监听实体事件。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>eventName</i></span></td><td><span class="function_parameter_description">
+string，要注销监听的事件名称。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>callback</i></span></td><td><span class="function_parameter_description">
+要注销监听的回调方法。
+</span></td></tr>
+</table>
+</p>
+
+
+<hr>
+<h2>回调函数文档</h2>
+
+
+<a name="onDestroy"></a><p class="function_definition">
+<span class="function_definition">def onDestroy( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，这个函数在调用<a href="Entity.html">Entity</a>.<a href=Entity.html#destroy>destroy</a>()后，在实际销毁之前被调用。
+这个函数没有参数。
+</div>
+
+<a name="onEnterTrap"></a><p class="function_definition">
+<span class="function_definition">def onEnterTrap( <i>self, entity, rangeXZ, rangeY, controllerID, userArg</i> ):</span>
+</p>
+
+<div class="function_description">当注册了使用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#addProximity>addProximity</a>注册了一个范围触发器，有其他实体进入触发器时，该回调函数被调用。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>entity</i></span></td><td><span class="function_parameter_description">&nbsp;已经进入了范围的实体。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>rangeXZ</i></span></td><td><span class="function_parameter_description">
+float，给定触发器xz轴区域的大小，必须大于等于0。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>rangeY</i></span></td><td><span class="function_parameter_description">
+float，给定触发器y轴高度，必须大于等于0。<br>
+需要注意的是，这个参数要生效必须开放<a href=../../keywords.html#kbengine_defaults.xml>kbengine_defaults.xml</a>->cellapp->coordinate_system->rangemgr_y
+<br>
+开放y轴管理会带来一些消耗，因为一些游戏大量的实体都在同一y轴高度或者在差不多水平线高度，此时碰撞变得非常密集。<br>
+3D太空类游戏或者小房间类实体较少的游戏比较适合开放此选项。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>controllerID</i></span></td><td><span class="function_parameter_description">&nbsp;这个触发器的控制器id。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userArg</i></span></td><td><span class="function_parameter_description">&nbsp;这个参数的值由用户调用<a href=Entity.html#addProximity>addProximity</a>时给出，用户可以根据此参数对当前行为做一些判断。
+</span></td></tr>
+
+</table>
+</p>
+
+<a name="onEnteredView"></a><p class="function_definition">
+<span class="function_definition">def onEnteredView( <i>self, entity</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当一个实体进入了当前实体的<a href=../../keywords.html#View>View</a>范围，该回调被触发。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>entity</i></span></td><td><span class="function_parameter_description">&nbsp;进入View范围的实体。
+</span></td></tr>
+
+</table>
+</p>
+
+
+<a name="onGetWitness"></a><p class="function_definition">
+<span class="function_definition">def onGetWitness( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当实体绑定了<a href=../../keywords.html#Witness>Witness</a>时被调用。<br>
+也可以访问实体属性<a href=#hasWitness>Entity.hasWitness</a>得到实体当前的状态。
+
+</div>
+
+<a name="onLeaveTrap"></a><p class="function_definition">
+<span class="function_definition">def onLeaveTrap( <i>self, entity, rangeXZ, rangeY, controllerID, userArg</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当实体离开了当前实体注册的范围触发器区域时被触发，范围触发器由<a href=../../keywords.html#entity>Entity</a>.<a href=#addProximity>addProximity</a>注册。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>entity</i></span></td><td><span class="function_parameter_description">&nbsp;已经离开触发器区域的实体。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>rangeXZ</i></span></td><td><span class="function_parameter_description">
+float，给定触发器xz轴区域的大小，必须大于等于0。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>rangeY</i></span></td><td><span class="function_parameter_description">
+float，给定触发器y轴高度，必须大于等于0。<br>
+需要注意的是，这个参数要生效必须开放<a href=../../keywords.html#kbengine_defaults.xml>kbengine_defaults.xml</a>->cellapp->coordinate_system->rangemgr_y
+<br>
+开放y轴管理会带来一些消耗，因为一些游戏大量的实体都在同一y轴高度或者在差不多水平线高度，此时碰撞变得非常密集。<br>
+3D太空类游戏或者小房间类实体较少的游戏比较适合开放此选项。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>controllerID</i></span></td><td><span class="function_parameter_description">&nbsp;这个触发器的控制器ID。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userArg</i></span></td><td><span class="function_parameter_description">&nbsp;这个参数的值由用户调用<a href=Entity.html#addProximity>addProximity</a>时给出，用户可以根据此参数对当前行为做一些判断。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="onLoseControlledBy"></a><p class="function_definition">
+<span class="function_definition">def onLoseControlledBy( <i>self, id</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#controlledBy >controlledBy </a>所关联的实体丢失时改回调方法被调用。<br>
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>id</i></span></td><td><span class="function_parameter_description">&nbsp;controlledBy实体的ID。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="onLoseWitness"></a><p class="function_definition">
+<span class="function_definition">def onLoseWitness( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当实体解除<a href=../../keywords.html#Witness>Witness</a>时，该回调被触发。<br>
+也可以访问实体属性<a href=#hasWitness>Entity.hasWitness</a>得到实体当前的状态。
+</div>
+
+<a name="onMove"></a><p class="function_definition">
+<span class="function_definition">def onMove( <i>self, controllerID, userData</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，相关的<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#moveToPoint>moveToPoint</a>与<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#moveToEntity>moveToEntity</a>还有<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#navigate>navigate</a>方法被调用并且成功后底层每帧移动都会回调此函数。<br>
+
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>controllerID</i></span></td><td><span class="function_parameter_description">&nbsp;与某个移动相关的控制器ID。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">&nbsp;这个参数值由用户在请求移动相关接口时给出。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="onMoveOver"></a><p class="function_definition">
+<span class="function_definition">def onMoveOver( <i>self, controllerID, userData</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，相关的<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#moveToPoint>moveToPoint</a>与<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#moveToEntity>moveToEntity</a>还有<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#navigate>navigate</a>方法被调用后到达指定目标点时会回调此函数。<br>
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>controllerID</i></span></td><td><span class="function_parameter_description">&nbsp;与某个移动相关的控制器ID。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">&nbsp;这个参数值由用户在请求移动相关接口时给出。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="onMoveFailure"></a><p class="function_definition">
+<span class="function_definition">def onMoveFailure( <i>self, controllerID, userData</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，相关的<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#moveToPoint>moveToPoint</a>与<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#moveToEntity>moveToEntity</a>还有<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#navigate>navigate</a>方法被调用并且失败时会回调此函数。<br>
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>controllerID</i></span></td><td><span class="function_parameter_description">&nbsp;与某个移动相关的控制器ID。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">&nbsp;这个参数值由用户在请求移动相关接口时给出。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+
+<a name="onRestore"></a><p class="function_definition">
+<span class="function_definition">def onRestore( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，这个函数在Cell应用程序崩溃后在其它Cell应用程序上重新创建该实体时被调用。这个函数没有参数。 
+</div>
+
+
+<a name="onSpaceGone"></a><p class="function_definition">
+<span class="function_definition">def onSpaceGone( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当前实体所在的<a href=../../keywords.html#cSpace>Space</a>将要销毁时触发 。这个函数没有参数。 
+</div>
+
+
+
+<a name="onTurn"></a><p class="function_definition">
+<span class="function_definition">def onTurn( <i>self, controllerID, userData</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，相关的<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#addYawRotator>addYawRotator</a>方法被调用后到达指定yaw时会回调此函数。<br>
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>controllerID</i></span></td><td><span class="function_parameter_description">&nbsp;<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#addYawRotator>addYawRotator</a>返回的控制器ID。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">&nbsp;这个参数值由用户在请求移动相关接口时给出。
+</span></td></tr>
+
+</table>
+</p>
+
+
+<a name="onTeleport"></a><p class="function_definition">
+<span class="function_definition">def onTeleport( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，在通过baseapp的Entity.teleport调用发生的实体传送中，实体(Real entity)被传送之前的时刻此方法会被调用。<br>
+请注意，在cell上调用实体的teleport并不会回调此接口，如果你需要这个功能请在<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#teleport>teleport</a>之后调用此回调。
+</div>
+
+
+<a name="onTimer"></a><p class="function_definition">
+<span class="function_definition">def onTimer( <i>self, timerHandle, userData</i> ):</span>
+</p>
+
+<div class="function_description">
+<b>功能说明：</b><br><br>
+这个函数当一个与此实体关联的定时器触发的时候被调用。
+一个定时器可以使用<a href=../../keywords.html#entity>Entity</a>.<a href=#addTimer>addTimer</a>函数添加。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>timerHandle</i></span></td><td><span class="function_parameter_description">
+定时器的id。
+</span></td></tr>
+
+<tr valign=top><td><span class="function_parameter_name"><i>userData</i></span></td><td><span class="function_parameter_description">
+传进<a href=../../keywords.html#entity>Entity</a>.<a href=#addTimer>addTimer</a>的integer用户数据。
+</span></td></tr>
+
+</table>
+</p>
+
+
+
+<a name="onTeleportFailure"></a><p class="function_definition">
+<span class="function_definition">def onTeleportFailure( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当用户调用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#teleport>teleport</a>失败时该回调被调用。
+</div>
+
+
+<a name="onTeleportSuccess"></a><p class="function_definition">
+<span class="function_definition">def onTeleportSuccess( <i>self, nearbyEntity</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，当用户调用<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#teleport>teleport</a>成功时该回调被调用。
+</div>
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>nearbyEntity</i></span></td><td><span class="function_parameter_description">&nbsp;这个参数由用户调用
+    <a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#teleport>teleport</a>时给出。这是一个real实体。
+<br><br>
+
+</table>
+</p>
+
+
+
+<a name="onUpdateBegin"></a><p class="function_definition">
+<span class="function_definition">def onUpdateBegin( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">当同步一帧开始时被调用。
+</div>
+
+
+
+<a name="onUpdateEnd"></a><p class="function_definition">
+<span class="function_definition">def onUpdateEnd( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">当同步一帧结束时被调用。
+</div>
+
+
+
+<a name="onWitnessed"></a><p class="function_definition">
+<span class="function_definition">def onWitnessed( <i>self, isWitnessed</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，如果当前实体进入了另一个绑定了Witness的实体的View范围（也可以理解为一个实体被观察者观察到了），则该实体的回调函数被调用。<br>
+可以利用这个函数在实体被观察时激活实体的AI，实体停止被观察时可以停止AI的执行，这样可以降低服务端的计算量从而提升效率。
+</div>
+
+
+
+<p>
+<span class="function_parameter">参数：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>isWitnessed</i></span></td><td><span class="function_parameter_description">&nbsp;bool，实体被观察时为True，实体被停止观察时是False。<br>
+也可以访问实体属性<a href=#isWitnessed>Entity.isWitnessed</a>得到实体当前的状态。
+</span></td></tr>
+
+</table>
+</p>
+
+<a name="onWriteToDB"></a><p class="function_definition">
+<span class="function_definition">def onWriteToDB( <i>self</i> ):</span>
+</p>
+
+<div class="function_description">如果这个函数在脚本中有实现，这个函数在实体将要存档到数据库时被调用。
+</div>
+
+<hr>
+<h2>属性文档</h2>
+
+<a name="allClients"></a><p class="attribute_definition">
+<span class="attribute_definition">allClients</span>
+</p>
+
+<div class="attribute_description">通过这个属性调用实体的客户端远程方法，引擎会将这个消息广播给实体View范围内所有的其他绑定了客户端的实体(包括自己的客户端，绑定了客户端的实体通常为玩家)。<br><br>
+例子：<br>
+avatar的View范围内有玩家A和玩家B以及怪物C。<br>
+avatar.allClients.attack(monsterID，skillID, damage)<br><br>
+此时，玩家自己和玩家A还有玩家B的客户端都会调用到该实体attack方法，在他们的客户端可以调用指定技能的攻击动作做表现。
+</div>
+
+<p>
+<span class="attribute_links"><b>其他参考：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#clientEntity">clientEntity</a><br><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#otherClients">otherClients</a><br></td></tr>
+</table>
+</p>
+
+
+
+<a name="base"></a><p class="attribute_definition">
+<span class="attribute_definition">base</span>
+</p>
+
+<div class="attribute_description">base是用于联系<a href=../../baseapp/classes/Entity.html>Entity</a>实体的entityCall。这个属性是只读的，且如果这个实体没有关联的<a href=../../baseapp/classes/Entity.html>Entity</a>实体时属性是None。
+</div>
+
+<p>
+<span class="attribute_links"><b>其他参考：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#clientEntity">clientEntity</a><br><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#allClients">allClients</a><br><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#otherClients">otherClients</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的，<a href=../../keywords.html#EntityCall>ENTITYCALL</a>
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="className"></a><p class="attribute_definition">
+<span class="attribute_definition">className</span>
+</p>
+
+<div class="attribute_description">实体的类名。 
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读，string
+</td></tr>
+</table>
+</p>
+
+<a name="client"></a><p class="attribute_definition">
+<span class="attribute_definition">client</span>
+</p>
+
+<div class="attribute_description">client是用于联系客户端的entityCall。这个属性是只读的，且如果这个实体没有关联的客户端时属性是None。
+</div>
+
+<p>
+<span class="attribute_links"><b>其他参考：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#clientEntity">clientEntity</a><br><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#allClients">allClients</a><br><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#otherClients">otherClients</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的，<a href=../../keywords.html#EntityCall>ENTITYCALL</a>
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="controlledBy"></a><p class="attribute_definition">
+<span class="attribute_definition">controlledBy</span>
+</p>
+
+<div class="attribute_description">该属性如果设置为某个客户端所关联的服务端实体的BaseEntityCall，那么该实体由对应的客户端来控制移动，如果该属性为None则实体由服务端移动。
+当客户端登陆后调用giveClientTo到该实体时，该属性会自动的设置为自己的BaseEntityCall。
+<br>
+脚本可以灵活的控制该实体由服务端控制移动或是由客户端（自己的客户端或是其他客户端）控制移动。
+</div>
+
+<p>
+<span class="attribute_links"><b>其他参考：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#onLoseControlledBy">onLoseControlledBy</a></td></tr>
+</table>
+</p>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#EntityCall>BaseEntityCall </a>
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="direction"></a><p class="attribute_definition">
+<span class="attribute_definition">direction</span>
+</p>
+
+<div class="attribute_description">这个属性描述的是<a href=../../keywords.html#entity>Entity</a>在世界空间中的朝向，用户可以改变这个属性，数据会同步到客户端。
+</div>
+
+例子：
+
+self.direction.y = 1.0
+self.direction.z = 1.0
+
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>Vector3, 其中包含(roll, pitch, yaw)，以弧度表示。
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="hasWitness"></a><p class="attribute_definition">
+<span class="attribute_definition">hasWitness</span>
+</p>
+
+<div class="attribute_description">这个只读属性如果为True，表示实体已经绑定了一个<a href=../../keywords.html#Witness>Witness</a>，绑定了Witness的实体则客户端可以通过实体获得实体View范围内的信息。否则为False。
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的， bool 
+</td></tr>
+</table>
+</p>
+
+<a name="id"></a><p class="attribute_definition">
+<span class="attribute_definition">id</span>
+</p>
+
+<div class="attribute_description">id是<a href=../../keywords.html#entity>Entity</a>的对象id。这个id是一个整型，在base，cell和client相关联的实体之间是相同的。 这个属性是只读的。 
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的，int32 
+</td></tr>
+</table>
+</p>
+
+<a name="isDestroyed"></a><p class="attribute_definition">
+<span class="attribute_definition">isDestroyed</span>
+</p>
+
+<div class="attribute_description">如果这个属性的值为True，<a href=../../keywords.html#entity>Entity</a>则已经被销毁了。
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的， bool
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="isOnGround"></a><p class="attribute_definition">
+<span class="attribute_definition">isOnGround</span>
+</p>
+
+<div class="attribute_description">如果这个属性的值为True，<a href=../../keywords.html#entity>Entity</a>在地面上，否则为False。
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的， bool
+</td></tr>
+</table>
+</p>
+
+
+<a name="isWitnessed"></a><p class="attribute_definition">
+<span class="attribute_definition">isWitnessed</span>
+</p>
+
+<div class="attribute_description">如果当前实体进入了另一个绑定了Witness的实体的View范围（也可以理解为一个实体被观察者观察到了, 这个属性值为True，否则为False。
+<br><br>
+参考：<br>
+<a href=../../keywords.html#entity>Entity</a>.<a href=Entity.html#onWitnessed>onWitnessed</a>
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的， bool 
+</td></tr>
+</table>
+</p>
+
+
+<a name="layer"></a><p class="attribute_definition">
+<span class="attribute_definition">layer</span>
+</p>
+
+<div class="attribute_description">一个space可以同时加载多个navmesh数据，不同的navmesh在不同的layer中，不同的layer可被抽象成地面、水面等等。
+通过这个属性决定一个实体存在于哪个layer中。
+<br><br>
+参考：<br>
+<a href=KBEngine.html#addSpaceGeometryMapping>KBEngine.addSpaceGeometryMapping</a>
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>int8 
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="otherClients"></a><p class="attribute_definition">
+<span class="attribute_definition">otherClients</span>
+</p>
+
+<div class="attribute_description">通过这个属性调用实体的客户端远程方法，引擎会将这个消息广播给实体View范围内所有的其他绑定了客户端的实体(不包括自己的客户端，绑定了客户端的实体通常为玩家)。<br><br>
+例子：<br>
+avatar的View范围内有玩家A和玩家B以及怪物C。<br>
+avatar.otherClients.attack(monsterID，skillID, damage)<br><br>
+此时，玩家A与玩家B的客户端都会调用到该实体attack方法，在他们的客户端可以调用指定技能的攻击动作做表现。
+</div>
+
+<p>
+<span class="attribute_links"><b>其他参考：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#clientEntity">clientEntity</a><br><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#otherClients">otherClients</a><br></td></tr>
+</table>
+</p>
+
+
+
+<a name="position"></a><p class="attribute_definition">
+<span class="attribute_definition">position</span>
+</p>
+
+<div class="attribute_description">这个实体在世界空间中的坐标(x, y, z)，这个属性可以被用户改变，改变后会同步到客户端。
+需要注意的是，不要引用这个属性，引用这个属性很有可能错误的修改了实体的真实坐标。
+<br><br>
+
+例子：
+<pre>self.position.y = 10.0
+</pre>
+<br><br>
+如果你想拷贝这个属性值可以使用如下方式：
+<br>
+<pre>
+	import Math
+	self.copyPosition = Math.<a href=../../keywords.html#vector3>Vector3</a>( self.position )
+</pre>
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#vector3>Vector3</a>
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="spaceID"></a><p class="attribute_definition">
+<span class="attribute_definition">spaceID</span>
+</p>
+
+<div class="attribute_description">这个属性是实体所在的<a href=../../keywords.html#cn_Space>空间</a>的ID，cell与客户端这个值都保持一致。
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>只读的，Integer
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="topSpeed"></a><p class="attribute_definition">
+<span class="attribute_definition">topSpeed</span>
+</p>
+
+<div class="attribute_description">实体的最大xz轴移动速度（米/秒），这个属性通常要比实际移动速度要大一些，服务端通过这个属性检查客户端的移动合法性，如果移动距离超出速度限制则被强制拉回上一个坐标位置。<br>
+</div>
+
+<p>
+<span class="attribute_links"><b>其他参考：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#topSpeedY">topSpeedY</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>float
+</td></tr>
+</table>
+</p>
+
+<a name="topSpeedY"></a><p class="attribute_definition">
+<span class="attribute_definition">topSpeedY</span>
+</p>
+
+<div class="attribute_description">实体的最大y轴移动速度（米/秒），这个属性通常要比实际移动速度要大一些，服务端通过这个属性检查客户端的移动合法性，如果移动距离超出速度限制则被强制拉回上一个坐标位置。
+</div>
+
+<p>
+<span class="attribute_links"><b>其他参考：</b></span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href=../../keywords.html#entity>Entity</a>.<a href="Entity.html#topSpeed">topSpeed</a><br></td></tr>
+</table>
+</p>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>float
+</td></tr>
+</table>
+</p>
+
+
+
+
+<a name="volatileInfo"></a><p class="attribute_definition">
+<span class="attribute_definition">volatileInfo</span>
+</p>
+
+<div class="attribute_description">这个属性指定<a href=../../keywords.html#entity>Entity</a>的易变类数据同步到客户端的策略。<br>
+易变类数据包括实体的坐标position和实体的朝向direction，易变类数据由于极易改变的特性，引擎底层使用了一套优化的方案将其同步到客户端。<br>
+这个属性是四个float（position，yaw，pitch，roll）代表距离值，当一个实体靠近当前实体达到距离则服务端向其同步相关数据。如果距离值大于View半径则代表总是同步。<br><br>
+还有一个特殊的bool属性optimized，它的作用是控制服务器同步时是否进行优化，目前主要的优化是Y轴。<br>
+如果为true，在一些行为(如：navigate)导致服务器能确定实体在地面时，服务器不同步实体的Y轴坐标，当同步大量实体时能节省大量带宽，默认为true。<br>
+<br><br>
+用户也可以在.def制定不同实体的同步策略：<br>
+
+<pre>&lt;Volatile&gt;
+    &lt;position/&gt;           &lt;!-- 总是同步 --&gt;
+    &lt;yaw/&gt;                &lt;!-- 总是同步 --&gt;
+    &lt;pitch&gt;20&lt;/pitch&gt;     &lt;!-- 相距20米或以内同步     --&gt;
+    &lt;optimized&gt; true &lt;/optimized&gt;   
+&lt;/Volatile&gt;               &lt;!-- roll未指明则总是同步  --&gt;
+
+</pre>
+</div>
+
+<p>
+<span class="attribute_type">类型：</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>sequence， 四个浮点数(float, float, float, float)
+</td></tr>
+</table>
+</p>
+
+
+<hr>
+<p class="copyrightFooter">版权归KBEngine所有。</p>
+</body>
+</html>
